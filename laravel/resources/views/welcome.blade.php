@@ -81,8 +81,8 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
-                </div>
+                      Hello it's testing
+                                    </div>
 
                 <div class="links">
                     <a href="https://laravel.com/docs">Docs</a>
