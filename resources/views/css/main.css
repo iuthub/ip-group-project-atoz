@@ -1,0 +1,297 @@
+body {
+    font-family: 'Cormorant', serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(250, 163, 0, 0.5)), url(../img/background/background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.info {
+    background-color: #C17817;
+}
+.primary-color  {
+    color: #FDFFFC;
+}
+
+.info a {
+    transition: color 0.1s linear;
+}
+
+.info a:hover {
+    color: #FFC53A;
+}
+
+/* Navbar */
+.navbar {
+    background: #C17817;
+    padding: 20px 20px;
+    transition: all 1s ease;
+    font-size: 45px;
+}
+
+.navbar-background {
+    padding: 5px 20px;
+}
+
+.navbar-brand {
+    font-size: 30px;
+    transition: all 1s ease;
+}
+
+.navbar-brand:hover {
+    color: #FDFFFC;
+}
+
+.nav-link {
+    color: #FDFFFC;
+    text-decoration: none;
+    transition: all 0.5s ease;
+    font-size: 30px;
+}
+
+.nav-link:hover {
+    color: #FFC53A;
+}
+.bar {
+    width: 30px;
+    height: 3px;
+    margin: 5px;
+    background: #FDFFFC;
+    transition: all 0.5 ease;
+}
+
+.change .bar1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.change .bar2 {
+    opacity: 0;
+}
+.change .bar3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/*Header*/
+
+#header {
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(250, 163, 0, 0.5)), url(../img/background/banner.jpg);
+    min-height: calc(100vh - 94px);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.height-90 {
+    min-height: calc(100vh - 94px);
+}
+
+.banner h1 {
+    border-top: solid;
+    border-bottom: solid;   
+    animation: fromLeft;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fromLeft {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    50%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fromRight {
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    50%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.main-btn {
+    color: #FDFFFC;
+    font-size: x-large;
+    font-weight: 300;
+    border: 3px solid;
+    border-radius: 25px;
+}
+
+.menu-btn {
+    animation: fromRight;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.main-btn:hover {
+    background-color: #FDFFFC;
+    color: #C17817;
+}
+@keyframes fromBottom {
+    0%{
+        transform: translateY(-10px);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(-10px);
+    }
+}
+
+
+
+/*Menu Items*/
+
+.item-container {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(#FDFFFC, #FDFFFC);
+    transition: all 0.5s ease;
+}
+
+.item-img {
+    transition: all 1s linear;
+}
+
+.item-container:hover .item-img {
+    transform: scale(1.1);
+}
+
+.item-link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FDFFFC;
+    font-size: 2rem;
+    transition: all 1s ease;
+    opacity: 0;
+}
+
+.item-container:hover .item-link {
+    opacity: 1;
+}
+
+.item-link:hover {
+    color: #FFC53A;
+    border: 3px solid #FFC53A;
+    background: #FFC53A;
+    color: #FDFFFC;
+}
+
+.item-container:hover{
+    outline: 5px solid #FFC53A;
+    outline-offset: 0.5rem;
+}
+
+/*About Us*/
+
+.about-pictures {
+    position: relative;
+}
+
+.about-image {
+    position: absolute;
+    width: 150px;
+    transition: all 2s ease;
+    opacity: 0.9;
+}
+
+.img-1 {
+    left: 0%;
+    top: 0%;
+    z-index: 10;
+}.img-2 {
+    left: 20%;
+    top: 20%;
+    z-index: 10;
+}.img-3 {
+    left: 40%;
+    top: 45%;
+    z-index: 20;
+}.img-4 {
+    left: 40%;
+    top: 0%;
+}.img-5 {
+    left: 0%;
+    top: 45%;
+}
+
+.about-image:hover {
+    outline: 5px solid #FFC53A;
+    outline-offset: 0.5rem;
+    transform: scale(1.5) rotate(15deg);
+    z-index: 30;
+    opacity: 1;
+}
+
+.about-pictures:hover .about-image:not(:hover) {
+    opacity: 0.5;
+}
+
+/* Reviews */
+
+.review-img {
+    width: 150px;
+}
+
+/* Team */
+.member-desc {
+    color: #C17817;
+}
+
+/* Contact */
+.height-60 {
+    min-height: 60vh;
+}
+
+#contact .card-header {
+    color: #C17817;
+}
+
+#contact .input-group-text {
+    background: #C17817;
+    border-color: #C17817;
+    color: #FDFFFC;
+}
+
+#contact .card input {
+    color: #000000;
+}
+
+.contact-btn {
+    color: #C17817;
+    border-color: #C17817;
+    background-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-btn:hover {
+    background: #C17817;
+    color: #FDFFFC;
+    border-color: #FDFFFC;
+}
+
+/* Footer */
+#back-to-top {
+    background: #C17817;
+    border-radius: 10px;
+    display: inline-block;
+}
